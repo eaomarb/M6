@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="cat">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Formulari de contacte alumne</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <form method="post" action="form.php">
+        <h1>Formulari de contacte alumne</h1>
+        <div class="nom">
+            <label for="nom" name="nom">Nom:</label>
+            <input type="text" name="nom">
+            <label id="cognoms" for="cognoms">Cognoms:</label>
+            <input type="text" name="cognoms">
+        </div>
+        <div>
+            <label for="edat">Edat:</label>
+            <input type="number" name="edat">
+        </div>
+        <div>
+            <label for="provincies">Provincia:</label>
+            <select name="provincies" id="provincies">
+                <option value="Lleida">Lleida</option>
+                <option value="Tarragona">Tarragona</option>
+                <option value="Barcelona">Barcelona</option>
+                <option value="Girona">Girona</option>
+            </select>
+        </div>
+        <div>
+            <label for="telefon">Telèfon:</label>
+            <input type="tel" name="telefon">
+        </div>
+
+
+        <div>
+            <label for="color">Color preferit:</label>
+            <input id="color" type="color" name="color">
+        </div>
+
+        <div>
+            <label for="cicle">Cicle formatiu:</label>
+            <select name="cicle" id="cicle" name="cicle">
+                <option value="SMX">SMX</option>
+                <option value="ASIX">ASIX</option>
+                <option value="DAM">DAM</option>
+                <option value="DAW">DAW</option>
+            </select>
+        </div>
+
+        <div>
+            <label for="estatCivil">Estat civil:</label>
+            <br>
+            <input type="radio" name="estat" value="Solter" id="Solter">
+            <label for="Solter">Solter</label>
+            <br>
+            <input type="radio" name="estat" value="Casat" id="Casat">
+            <label for="Solter">Casat</label>
+            <br>
+            <input type="radio" name="estat" value="Separat" id="Separat">
+            <label for="Solter">Separat</label>
+            <br>
+            <input type="radio" name="estat" value="Víudo" id="Víudo">
+            <label for="Solter">Víudo</label>
+        </div>
+
+        <div>
+            <label for="estatProfessional">Estat professional:</label>
+            <br>
+            <input type="checkbox" name="estudiant" value="estudiant">
+            <label for="estudiant">Estudiant</label><br>
+            <input type="checkbox" name="treballador" value="treballador">
+            <label for="treballador">Treballador</label><br>
+        </div>
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+
+</html>
